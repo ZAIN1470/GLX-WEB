@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="bg" cx="72%" cy="48%" r="75%">
+      <stop offset="0" stop-color="#22362d"/>
+      <stop offset="0.5" stop-color="#101b17"/>
+      <stop offset="1" stop-color="#070c0b"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#b99a5b" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#b99a5b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="case" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f1dfae"/>
+      <stop offset="0.35" stop-color="#b99a5b"/>
+      <stop offset="0.7" stop-color="#7d6535"/>
+      <stop offset="1" stop-color="#d6bf8c"/>
+    </linearGradient>
+    <linearGradient id="strap" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0a0f0d"/>
+      <stop offset="0.5" stop-color="#1c2a24"/>
+      <stop offset="1" stop-color="#0a0f0d"/>
+    </linearGradient>
+    <radialGradient id="dial" cx="40%" cy="35%" r="80%">
+      <stop offset="0" stop-color="#1f3a30"/>
+      <stop offset="1" stop-color="#0b1613"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+
+  <!-- soft light behind the watch -->
+  <circle cx="1400" cy="520" r="620" fill="url(#glow)"/>
+
+  <!-- fine concentric rings -->
+  <g fill="none" stroke="#b99a5b" stroke-opacity="0.12">
+    <circle cx="1400" cy="520" r="360"/>
+    <circle cx="1400" cy="520" r="440"/>
+    <circle cx="1400" cy="520" r="530"/>
+    <circle cx="1400" cy="520" r="640"/>
+    <circle cx="1400" cy="520" r="760"/>
+  </g>
+
+  <!-- strap -->
+  <path d="M1275 -40 L1525 -40 L1545 250 L1255 250 Z" fill="url(#strap)"/>
+  <path d="M1255 790 L1545 790 L1525 1120 L1275 1120 Z" fill="url(#strap)"/>
+  <g stroke="#b99a5b" stroke-opacity="0.35" stroke-dasharray="10 9" fill="none">
+    <path d="M1300 -40 L1315 250"/>
+    <path d="M1500 -40 L1485 250"/>
+    <path d="M1315 790 L1300 1120"/>
+    <path d="M1485 790 L1500 1120"/>
+  </g>
+
+  <!-- case -->
+  <rect x="1688" y="496" width="44" height="48" rx="8" fill="url(#case)"/>
+  <circle cx="1400" cy="520" r="300" fill="url(#case)"/>
+  <circle cx="1400" cy="520" r="278" fill="#0b1210"/>
+  <circle cx="1400" cy="520" r="268" fill="url(#case)"/>
+  <circle cx="1400" cy="520" r="250" fill="url(#dial)"/>
+
+  <!-- minute track -->
+  <circle cx="1400" cy="520" r="236" fill="none" stroke="#d6bf8c" stroke-opacity="0.45" stroke-width="1" stroke-dasharray="1.2 11.6"/>
+
+  <!-- hour markers -->
+  <g stroke="#e8d7a8" stroke-width="7" stroke-linecap="round">
+    <line x1="1400" y1="290" x2="1400" y2="328"/>
+    <line x1="1400" y1="290" x2="1400" y2="328" transform="rotate(30 1400 520)"/>
+    <line x1="1400" y1="290" x2="1400" y2="328" transform="rotate(60 1400 520)"/>
+    <line x1="1400" y1="290" x2="1400" y2="328" transform="rotate(90 1400 520)"/>
+    <line x1="1400" y1="290" x2="1400" y2="328" transform="rotate(120 1400 520)"/>
+    <line x1="1400" y1="290" x2="1400" y2="328" transform="rotate(150 1400 520)"/>
+    <line x1="1400" y1="290" x2="1400" y2="328" transform="rotate(180 1400 520)"/>
+    <line x1="1400" y1="290" x2="1400" y2="328" transform="rotate(210 1400 520)"/>
+    <line x1="1400" y1="290" x2="1400" y2="328" transform="rotate(240 1400 520)"/>
+    <line x1="1400" y1="290" x2="1400" y2="328" transform="rotate(270 1400 520)"/>
+    <line x1="1400" y1="290" x2="1400" y2="328" transform="rotate(300 1400 520)"/>
+    <line x1="1400" y1="290" x2="1400" y2="328" transform="rotate(330 1400 520)"/>
+  </g>
+
+  <!-- sub dial -->
+  <circle cx="1400" cy="640" r="46" fill="none" stroke="#d6bf8c" stroke-opacity="0.5"/>
+  <line x1="1400" y1="640" x2="1420" y2="622" stroke="#d6bf8c" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- wordmark -->
+  <text x="1400" y="430" text-anchor="middle" font-family="Georgia, serif" font-size="34" letter-spacing="14" fill="#d6bf8c">GLX</text>
+  <text x="1400" y="458" text-anchor="middle" font-family="Georgia, serif" font-size="11" letter-spacing="7" fill="#9aa59f">AUTOMATIC</text>
+
+  <!-- hands (10:08) -->
+  <g stroke-linecap="round">
+    <line x1="1400" y1="520" x2="1318" y2="468" stroke="#f1e3bd" stroke-width="13"/>
+    <line x1="1400" y1="520" x2="1482" y2="330" stroke="#f1e3bd" stroke-width="9"/>
+    <line x1="1400" y1="560" x2="1370" y2="312" stroke="#b99a5b" stroke-width="3"/>
+  </g>
+  <circle cx="1400" cy="520" r="15" fill="#b99a5b"/>
+  <circle cx="1400" cy="520" r="6" fill="#0b1210"/>
+
+  <!-- glass reflection -->
+  <path d="M1190 380 A250 250 0 0 1 1470 275 L1400 520 Z" fill="#ffffff" fill-opacity="0.035"/>
+</svg>
